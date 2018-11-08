@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MI_BARRIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSSestilo/estilos.css" />
+    <script src="main.js"></script>
+    <Script Language="JavaScript">
+            function DameLaFechaHora() {
+              var hora = new Date()
+              var hrs = hora.getHours();
+              var min = hora.getMinutes();
+              var hoy = new Date();
+              var m = new Array();
+              var d = new Array()
+              var an= hoy.getYear();
+              m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+              m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+              m[6]="Julio";    m[7]="Agosto";   m[8]="Septiembre";
+              m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+              document.write("Son las "+hrs+":"+min+" (");
+              document.write(hoy.getDate());
+              document.write(" de ");
+              document.write(m[hoy.getMonth()]);
+              document.write(")");
+            }
+          </Script>
+    </head>
+<body>
+    <header>
+    <h1> MI BARRIO LIMPIO</h1>
+                <script>
+                    DameLaFechaHora();
+            </script>
+                  <br>
+        <nav class="menu">
+            <ul>
+                <li><a href="">OR&Iacute;GEN</a></li>
+                <li><a href="">COLORES</a></li>
+                <li><a href="">EJEMPLOS</a></li>
+            </ul>
+        </nav>
+     </header>   
+        <h2> BASURAS</h2>
+                    
+    
+    <article class="Columnas">
+        <section class="Col1">
+            <figure>        
+                    <img src="Imagenes/Localidades.jpg" alt="Frutas"</figure>
+         <p><u>COMPONENTES</u></p>               
+            <ol>
+                <li>Localidades</li>
+                <li>Barrios</li>
+                <li>Entidades</li>
+                <li>Centros de Acopio</li>
+            </ol>
+        </section>
+        <section class="Col2">
+            <figure>
+                <img src="Imagenes/origen.jpg" alt="Or&iacute;gen"</figure>
+         <p><u>OR&Iacute;GEN DE LAS <b>BASURAS</b></u></p>       
+                <ol>
+                        <li>Dom&eacute;stico</li>
+                        <li>Comercial</li>
+                        <li>Construcci&oacute;n</li>
+                        <li>Hospitalarios</li>
+                        <li>Industriral</li>
+                        <li>Agr&iacute;cola</li>
+                        <li>Servicio Comunitario</li>
+                    </ol>
+        </section>
+        <section class="Col3">
+                <figure>
+                    <img src="Imagenes/colores.jpg" alt="Frutas"</figure>
+        <p> <u>CARTA DE COLORES</u></p>
+        <ol>
+                <li><font color="blue">Azul</font></li>
+                <li> <font color="yellow">Amarillo</font></li>
+                <li><font color="green">Verde</font></li>
+                <li><font color="#D4A190">Marr&oacute;n</font></li>
+                <li><font color ="#B7BAB6">Gris</font></li>
+                <li><font color="red">Rojo</font></li>
+            </ol>   
+        </section>
+    </article>
+            
+</body>
+                <footer>
+                        <form action="index.html" method="GET">
+                                <label>Fecha:</label>
+                                <input type="date"/>
+                                </form>
+                </footer>
+</html>
